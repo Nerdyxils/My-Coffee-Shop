@@ -102,7 +102,6 @@ a {
 .product {
     .product-box {
         box-shadow: 10px 10px 70px 0 rgba(182,140,77, 0.3);
-        webkit-box-shadow: 10px 10px 70px 0 rgba(182,140,77, 0.3) !important;
         -moz-box-shadow: 10px 10px 70px 0 rgba(182,140,77, 0.3) !important;
 
         .coffee-name {
@@ -132,6 +131,35 @@ a {
     }
 }
 
+.cart-container {
+    display: none;
+    background-color: #B68C4D;
+    color: #fff !important;
+    width: 450px;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 20px;
+
+    .cart-close {
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+    }   
+
+    .cart-table {
+        width: 450px - (10px * 3);
+        border-spacing: 10px;
+        border-collapse: collapse;
+        margin: 0px;
+
+        .cart-remove {
+            cursor: pointer;
+        }
+    }
+}
 
 
 
