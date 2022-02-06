@@ -6,8 +6,9 @@
         <title>Coffee Shop</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="/css/all.css">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css">
+        <script defer src="/node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
 
         <!-- FONY AWESOME -->
 
@@ -16,35 +17,118 @@
     </head>
     <body>
         <section class="hero_sec">
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent container">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <i class="fas fa-shopping-cart"></i>
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                <div class="container">
+                    <a class="navbar-brand text-white" href="#">
+                        <img src="images/coffee.svg" alt="logo" width="30" height="24" class="coffee_logo d-inline-block align-text-top">
+                        COFFEE SHOP
                     </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
-                  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Find a doctor</a>
+                        <a class="nav-link" href="#">Menu</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">App</a>
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Review</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Testimonials</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
                       </li>
                     </ul>
+                    <form class="d-flex">
+                        <a href="#"><img src="images/cart.svg" alt="cart items" class="me-2">Cart(0)</a>
+                    </form>
                   </div>
                 </div>
-            </nav>
+              </nav>
+
+              <div class="hero-text container">
+                  <div class="row py-5 my-5">
+                      <div class="col-md-6"></div>
+                      <div class="col-md-6 mt-5 main-txt">
+                            <h1 class="h-txt">
+                                FRESH COFFEE IN <br> THE MORNING
+                            </h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt inventore, in error repellat natus totam, 
+                                accusantium dolorem numquam distinctio vel eos dolorum soluta ab, 
+                                obcaecati quisquam asperiores at ad!
+                            </p>
+                            <button class="btn brown-btn">Order Now</button>
+                      </div>
+                  </div>
+              </div>
+        </section>
+
+        <section class="product">
+            <div class="container">
+                <h1>Products</h1>
+                <div class="divider my-5"></div>
+                <div class="row">
+                    <div class="col p-3">
+                        <div class="product-box">
+                            <div class="coffee-name">
+                                <h4>Espresso</h4>
+                            </div>
+                            <img src="images/coffee-1.jpeg" alt="coffee" class="product-image">
+                            <div class="p-body">
+                                <div class="d-flex justify-content-between">
+                                    <p><b>Price: $10.02</b></p>
+                                    <div class="quantity d-flex">
+                                        <button class="c-btn"><i class="fas fa-minus"></i></button>
+                                        <p class="q-number" id="number">0</p>
+                                        <button class="c-btn"><i class="fas fa-plus"></i></button>
+                                    </div>
+                                </div>
+                                <button class="btn white-btn cart-btn">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-3">
+                        <div class="product-box">
+                            <div class="coffee-name">
+                                <h4>Espresso</h4>
+                            </div>
+                            <img src="images/coffee-1.jpeg" alt="coffee" class="product-image">
+                            <div class="p-body">
+                                <div class="d-flex justify-content-between">
+                                    <p><b>Price: $10.02</b></p>
+                                    <div class="quantity d-flex">
+                                        <button class="c-btn"><i class="fas fa-minus"></i></button>
+                                        <p class="q-number" id="number">0</p>
+                                        <button class="c-btn"><i class="fas fa-plus"></i></button>
+                                    </div>
+                                </div>
+                                <button class="btn white-btn cart-btn">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-3">
+                        <div class="product-box">
+                            <div class="coffee-name">
+                                <h4>Espresso</h4>
+                            </div>
+                            <img src="images/coffee-1.jpeg" alt="coffee" class="product-image">
+                            <div class="p-body">
+                                <div class="d-flex justify-content-between">
+                                    <p><b>Price: $10.02</b></p>
+                                    <div class="quantity d-flex">
+                                        <button class="c-btn"><i class="fas fa-minus"></i></button>
+                                        <p class="q-number" id="number">0</p>
+                                        <button class="c-btn"><i class="fas fa-plus"></i></button>
+                                    </div>
+                                </div>
+                                <button class="btn white-btn cart-btn">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         
         
