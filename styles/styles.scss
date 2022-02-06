@@ -103,6 +103,7 @@ a {
     .product-box {
         box-shadow: 10px 10px 70px 0 rgba(182,140,77, 0.3);
         -moz-box-shadow: 10px 10px 70px 0 rgba(182,140,77, 0.3) !important;
+        min-width: 320px;
 
         .coffee-name {
             color: #fff;
