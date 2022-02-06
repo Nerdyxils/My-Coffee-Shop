@@ -163,6 +163,10 @@ a {
 }
 
 
-
+@media (max-width: 500px) {
+    .hero_sec {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.55) 0%,rgba(0,0,0,0.55) 100%), url(../images/mobile-bg.png);
+    }
+}
 
 
