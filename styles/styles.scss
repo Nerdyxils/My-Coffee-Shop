@@ -99,6 +99,10 @@ a {
         text-align: right;
         margin: 100px auto;
     }
+
+    .open-cart {
+        cursor: pointer;
+    }
 }
 
 .product {
@@ -135,10 +139,9 @@ a {
 }
 
 .cart-container {
-    display: none;
     background-color: #B68C4D;
     color: #fff !important;
-    width: 100vw;
+    width: 400px;
     height: 100%;
     position: fixed;
     right: 0;
@@ -153,7 +156,7 @@ a {
     }   
 
     .cart-table {
-        width: 320px - (10px * 3);
+        width: 400px - (10px * 3);
         border-spacing: 10px;
         border-collapse: collapse;
         margin: 0px;
