@@ -65,6 +65,22 @@ img {
     margin-right: 5px;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.q-number {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+}
+
 a {
     font-size: 14px;
     color: #fff !important;
